@@ -1,16 +1,16 @@
 /**
- * PropFlow AI MVP - Main App Component
- * "8-Year-Old Simple" Property Management
+ * PropFlow AI MVP - Premium Application
+ * Professional Property Management Platform
  */
 
 import React from 'react';
-import PropFlowMVP from './MVP_PropFlowDashboard';
-import './MVP_PropFlow.css';
+import PremiumPropFlowDashboard from './components/PremiumDashboard';
+import './styles/DesignSystem.css';
 
 function App() {
   return (
     <div className="App">
-      <PropFlowMVP />
+      <PremiumPropFlowDashboard />
     </div>
   );
 }
