@@ -3,6 +3,10 @@
 
 🎯 **Design Principle**: If an 8-year-old can't use it, it's too complex.
 
+🚀 **Live Demo**: [Frontend](https://propflow-ai-mvp-frontend.vercel.app) | [Backend API](https://propflow-ai-mvp-backend.railway.app/docs)
+
+📦 **Repository**: https://github.com/troy-samuels/propflow-ai-mvp
+
 ## Project Structure
 
 ```
@@ -27,13 +31,21 @@ propflow-ai-mvp/
 
 ## Quick Start
 
-### Run the Demo
+### 🚀 One-Click Deploy
+1. **Frontend**: [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/troy-samuels/propflow-ai-mvp&project-name=propflow-ai-frontend&root-directory=propflow-ai-mvp/frontend)
+2. **Backend**: [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/new/template?template=https://github.com/troy-samuels/propflow-ai-mvp&referralCode=troy&envs=PORT&PORTDefault=8000)
+
+See **[DEPLOYMENT.md](DEPLOYMENT.md)** for complete deployment guide.
+
+### Run Locally
+
+#### Demo (Fastest)
 ```bash
 cd backend
 python demo_mvp.py
 ```
 
-### Full MVP
+#### Full Development Stack
 ```bash
 # Backend (Terminal 1)
 cd backend
