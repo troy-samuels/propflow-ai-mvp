@@ -42,7 +42,7 @@
 
 2. **Configure Service**
    - **Root Directory**: `propflow-ai-mvp/backend`
-   - **Start Command**: `uvicorn mvp_main:app --host 0.0.0.0 --port $PORT`
+   - **Start Command**: `python -m uvicorn main:app --host 0.0.0.0 --port $PORT`
    - Railway auto-detects Python and installs requirements.txt
 
 3. **Environment Variables** (Optional)
