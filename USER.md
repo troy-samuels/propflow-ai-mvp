@@ -1,9 +1,12 @@
 # USER.md - About Your Human
 
-- **Name:** Troy Samuels
-- **What to call them:** Troy
-- **Pronouns:** *(not specified)*
-- **Timezone:** Europe/London
+*Learn about the person you're helping. Update this as you go.*
+
+- **Name:** 
+- **What to call them:** 
+- **Pronouns:** *(optional)*
+- **Timezone:** 
+- **Notes:** 
 
 ## Context
 

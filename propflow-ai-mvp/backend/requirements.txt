@@ -1,0 +1,38 @@
+# PropFlow AI MVP Backend Requirements
+# "8-Year-Old Simple" - Zero configuration needed
+
+# Web framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# HTTP client for API calls
+httpx==0.25.2
+
+# Data validation
+pydantic==2.5.0
+
+# Type hints support
+typing-extensions==4.8.0
+
+# CORS middleware (for React frontend)
+# Already included in FastAPI
+
+# Optional: for production deployment
+# gunicorn==21.2.0  # Production WSGI server
+# python-multipart==0.0.6  # For form data handling
+
+# Optional: for database (if you want to persist data)
+# asyncpg==0.29.0  # PostgreSQL async driver
+# databases[postgresql]==0.8.0  # Database abstraction
+
+# Optional: for environment variables
+# python-dotenv==1.0.0
+
+# Optional: for advanced logging
+# loguru==0.7.2
+
+# Development tools (optional)
+# pytest==7.4.3  # Testing
+# pytest-asyncio==0.21.1  # Async testing
+# black==23.10.1  # Code formatting
+# flake8==6.1.0  # Linting
