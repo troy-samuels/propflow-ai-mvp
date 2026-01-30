@@ -1,13 +1,15 @@
 {
-  "name": "propflow-ai-mvp",
+  "name": "propflow-ai-mvp-frontend",
   "version": "1.0.0",
-  "description": "PropFlow AI MVP - 8-Year-Old Simple Property Management",
+  "description": "PropFlow AI MVP - 8-Year-Old Simple Property Management Frontend",
   "private": true,
+  "homepage": ".",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "dev": "react-scripts start",
-    "magic": "echo '🤖 Starting PropFlow AI Magic...' && npm start"
+    "magic": "echo '🤖 Starting PropFlow AI Magic...' && npm start",
+    "vercel-build": "npm run build"
   },
   "dependencies": {
     "@types/node": "^16.18.0",
