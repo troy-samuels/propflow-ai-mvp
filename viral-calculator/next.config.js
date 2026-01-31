@@ -39,7 +39,6 @@ const nextConfig = {
   
   // Performance optimizations
   experimental: {
-    optimizeCss: true,
     scrollRestoration: true,
   },
   

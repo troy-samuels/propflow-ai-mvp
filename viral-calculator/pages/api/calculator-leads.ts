@@ -162,7 +162,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       success: true,
       leadId: lead.id,
       emailSent: emailResult.success,
-      emailSuppressed: emailResult.suppressed?.length > 0,
+      emailSuppressed: emailResult.suppressed ? emailResult.suppressed.length > 0 : false,
       message: emailResult.success 
         ? 'Analysis sent to your email!' 
         : 'Analysis saved! Email delivery pending.',
