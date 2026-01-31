@@ -1,0 +1,279 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* TutorLingua global styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #FDF8F5;
+  color: #2D2A26;
+  line-height: 1.6;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F5EDE8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #D36135;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #B85129;
+}
+
+/* Range slider custom styling to match TutorLingua brand */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  height: 44px; /* Touch-friendly */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Track styling */
+input[type="range"]::-webkit-slider-track {
+  height: 8px;
+  background: #E8D5CC;
+  border-radius: 4px;
+  width: 100%;
+}
+
+input[type="range"]::-moz-range-track {
+  height: 8px;
+  background: #E8D5CC;
+  border-radius: 4px;
+  width: 100%;
+  border: none;
+}
+
+/* Thumb styling */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, #B85129 0%, #D36135 100%);
+  border-radius: 50%;
+  margin-top: -10px;
+  box-shadow: 0 4px 12px rgba(211, 97, 53, 0.3);
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 28px;
+  height: 28px;
+  background: linear-gradient(135deg, #B85129 0%, #D36135 100%);
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 4px 12px rgba(211, 97, 53, 0.3);
+  transition: all 0.15s ease;
+  cursor: pointer;
+}
+
+/* Hover and focus states */
+input[type="range"]:hover::-webkit-slider-thumb,
+input[type="range"]:focus::-webkit-slider-thumb {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(211, 97, 53, 0.4);
+}
+
+input[type="range"]:hover::-moz-range-thumb,
+input[type="range"]:focus::-moz-range-thumb {
+  transform: scale(1.1);
+  box-shadow: 0 6px 16px rgba(211, 97, 53, 0.4);
+}
+
+/* Focus ring for accessibility */
+input[type="range"]:focus {
+  outline: none;
+}
+
+input[type="range"]:focus-visible::-webkit-slider-thumb {
+  outline: 2px solid #D36135;
+  outline-offset: 2px;
+}
+
+input[type="range"]:focus-visible::-moz-range-thumb {
+  outline: 2px solid #D36135;
+  outline-offset: 2px;
+}
+
+/* Form error shake animation */
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-4px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(4px);
+  }
+}
+
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Loading spinner customization */
+.spinner {
+  border: 3px solid rgba(211, 97, 53, 0.3);
+  border-top-color: #D36135;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* TutorLingua button styles */
+.btn-tutorlingua {
+  background: linear-gradient(135deg, #B85129 0%, #D36135 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(211, 97, 53, 0.2);
+}
+
+.btn-tutorlingua:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(211, 97, 53, 0.3);
+}
+
+.btn-tutorlingua:active {
+  transform: translateY(0);
+}
+
+.btn-tutorlingua:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Shock button variant */
+.btn-shock {
+  background: linear-gradient(135deg, #7F1D1D 0%, #A24936 100%);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 16px 32px;
+  font-family: 'Manrope', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 32px rgba(164, 73, 54, 0.4);
+}
+
+.btn-shock:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(164, 73, 54, 0.5);
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(45, 42, 38, 0.1);
+}
+
+/* Text selection styling */
+::selection {
+  background-color: rgba(211, 97, 53, 0.2);
+  color: #2D2A26;
+}
+
+::-moz-selection {
+  background-color: rgba(211, 97, 53, 0.2);
+  color: #2D2A26;
+}
+
+/* Smooth transitions for theme changes */
+* {
+  transition-property: color, background-color, border-color;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  /* Larger touch targets on mobile */
+  button, 
+  input[type="button"], 
+  input[type="submit"] {
+    min-height: 48px;
+    padding: 12px 20px;
+  }
+  
+  input[type="range"] {
+    height: 48px;
+  }
+  
+  /* Prevent zoom on iOS when focusing inputs */
+  input, select, textarea {
+    font-size: 16px;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Focus indicators for keyboard navigation */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid #D36135;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .btn-tutorlingua {
+    border: 2px solid #2D2A26;
+  }
+  
+  .card-hover {
+    border: 1px solid #2D2A26;
+  }
+}

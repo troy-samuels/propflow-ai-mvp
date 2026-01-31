@@ -1,0 +1,50 @@
+{
+  "name": "tutorlingua-viral-calculator",
+  "version": "1.0.0",
+  "description": "Viral Independence Calculator for TutorLingua - Expose platform fees, generate leads, drive independence",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^14.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@supabase/supabase-js": "^2.38.5",
+    "resend": "^2.1.0",
+    "framer-motion": "^10.16.16",
+    "lucide-react": "^0.294.0",
+    "zod": "^3.22.4",
+    "dompurify": "^3.0.8",
+    "isomorphic-dompurify": "^2.9.0",
+    "crypto-js": "^4.2.0",
+    "next-rate-limit": "^1.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0",
+    "eslint-config-next": "^14.0.4",
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.5",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@types/dompurify": "^3.0.5",
+    "@types/crypto-js": "^4.2.2"
+  },
+  "keywords": [
+    "tutorlingua",
+    "calculator",
+    "viral",
+    "lead-generation",
+    "platform-independence",
+    "language-tutoring"
+  ],
+  "author": "TutorLingua Team",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
